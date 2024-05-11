@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/mobile.css" />
     <link rel="icon" type="image/png" href="favicon.png" />
+    <script src="https://google.com/recaptcha/api.js"></script>
     <title>Vinicius Lima | Web Designer</title>
   </head>
   <body>
@@ -828,7 +829,6 @@
 
               <form
                 id="contactpage"
-                method="POST"
                 class="contact-form wow slideInRight text-lg-left text-center"
               >
                 <div class="row">
@@ -898,11 +898,17 @@
                 <div id="msgErro" class="mensagem d-none">
                   <span>Erro ao enviar mensagem</span>
                 </div>
-                <button type="submit" id="submit" class="appointment-btn">
+                <button
+                  type="submit"
+                  id="submit"
+                  class="appointment-btn g-recaptcha"
+                  data-sitekey="6LeKN9kpAAAAADiVFm2hujUe2fgB4toVKR3YD8eL"
+                  data-callback="onSubmit"
+                  data-action="submit"
+                >
                   Enviar
                 </button>
               </form>
-              
             </div>
           </div>
         </div>
@@ -1037,11 +1043,7 @@
           </div>
           <div class="modal-body service-model-content">
             <figure class="mb-0">
-              <img
-                src=""
-                alt="portfolio-model-img1"
-                class="img-fluid"
-              />
+              <img src="" alt="portfolio-model-img1" class="img-fluid" />
             </figure>
             <h4>Application UI Design</h4>
             <p class="mb-md-4 mb-2">
@@ -1137,11 +1139,7 @@
           </div>
           <div class="modal-body service-model-content">
             <figure class="mb-0">
-              <img
-                src=""
-                alt="portfolio-model-img1"
-                class="img-fluid"
-              />
+              <img src="" alt="portfolio-model-img1" class="img-fluid" />
             </figure>
             <h4>De Mãos Dadas Criamos Correntezas</h4>
             <p class="mb-md-4 mb-2">
@@ -1240,11 +1238,7 @@
           </div>
           <div class="modal-body service-model-content">
             <figure class="mb-0">
-              <img
-                src=""
-                alt="portfolio-model-img1"
-                class="img-fluid"
-              />
+              <img src="" alt="portfolio-model-img1" class="img-fluid" />
             </figure>
             <h4>Mobile UI Design</h4>
             <p class="mb-md-4 mb-2">
@@ -1300,11 +1294,7 @@
           </div>
           <div class="modal-body service-model-content">
             <figure class="mb-0">
-              <img
-                src=""
-                alt="portfolio-model-img1"
-                class="img-fluid"
-              />
+              <img src="" alt="portfolio-model-img1" class="img-fluid" />
             </figure>
             <h4>Businesscard UI Design</h4>
             <p class="mb-md-4 mb-2">
@@ -1360,11 +1350,7 @@
           </div>
           <div class="modal-body service-model-content">
             <figure class="mb-0">
-              <img
-                src=""
-                alt="portfolio-model-img1"
-                class="img-fluid"
-              />
+              <img src="" alt="portfolio-model-img1" class="img-fluid" />
             </figure>
             <h4>Businesscard UI Design</h4>
             <p class="mb-md-4 mb-2">
@@ -1480,11 +1466,7 @@
           </div>
           <div class="modal-body service-model-content">
             <figure class="mb-0">
-              <img
-                src=""
-                alt="portfolio-model-img1"
-                class="img-fluid"
-              />
+              <img src="" alt="portfolio-model-img1" class="img-fluid" />
             </figure>
             <h4>Real estate UI Design</h4>
             <p class="mb-md-4 mb-2">
@@ -2241,5 +2223,11 @@
         el.remove();
       }
     </script>
+
+<script>
+  function onSubmit(token) {
+    document.getElementById("contactpage").submit();
+  }
+</script>
   </body>
 </html>

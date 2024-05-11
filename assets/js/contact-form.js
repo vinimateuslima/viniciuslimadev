@@ -1,4 +1,4 @@
-let form = document.querySelector(".form-main-inner-con");
+let form = document.getElementById('contactpage');
 let msgSucesso = document.getElementById("msgSucesso");
 let msgErro = document.getElementById("msgErro");
 
