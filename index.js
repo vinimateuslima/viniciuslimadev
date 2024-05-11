@@ -5,8 +5,8 @@ const app = express();
 const port = process.env.PORT || 3000;
 const path = require("path");
 
-const user = process.env.EMAIL || "viniciusmateus.dev@gmail.com";
-const pass = process.env.SENHA || "frjl mciy hqru vhsb";
+const user = process.env.EMAIL;
+const pass = process.env.SENHA;
 
 // Middleware para fazer o parse do corpo da requisição como JSON
 app.use(bodyParser.json());
