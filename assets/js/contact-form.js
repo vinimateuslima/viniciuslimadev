@@ -2,18 +2,24 @@ let form = document.querySelector(".form-main-inner-con");
 let msgSucesso = document.getElementById("msgSucesso");
 let msgErro = document.getElementById("msgErro");
 
+let nome = document.getElementById("name");
+let email = document.getElementById("emailHelp");
+let assunto = document.getElementById("subject");
+let telefone = document.getElementById("phone");
+let mensagem = document.getElementById("comments");
+
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   const formData = {
-    email: document.getElementById("emailHelp").value,
-    assunto: document.getElementById("subject").value,
+    email: email.value,
+    assunto: assunto.value,
     html: `<p>
-	<strong>Nome: </strong>${document.getElementById("name").value} 
+	<strong>Nome: </strong>${nome.value} 
 	<br/> 
-	<strong>Telefone: </strong>${document.getElementById("phone").value}
+	<strong>Telefone: </strong>${telefone.value}
 	<br/> 
-	<strong>Mensagem: </strong>${document.getElementById("comments").value} </p>`,
+	<strong>Mensagem: </strong>${mensagem.value} </p>`,
   };
 
   const options = {
@@ -25,7 +31,12 @@ form.addEventListener("submit", (e) => {
   fetch("https://vinilimadev.com/send", options)
     .then((response) => response.json())
     .then((data) => {
-      console.log("Resposta do servidor:", data);
+
+      nome.value = "";
+      email.value = "";
+      assunto.value = "";
+      telefone.value = "";
+      mensagem.value = "";
 
       msgSucesso.setAttribute("class", "mensagem");
 
@@ -41,6 +52,5 @@ form.addEventListener("submit", (e) => {
       setTimeout(() => {
         msgErro.setAttribute("class", "mensagem d-none");
       }, 3000);
-	  
     });
 });
