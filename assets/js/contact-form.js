@@ -22,7 +22,7 @@ form.addEventListener("submit", (e) => {
     body: JSON.stringify(formData),
   };
 
-  fetch("/send", options)
+  fetch("https://vinilimadev.com/send", options)
     .then((response) => response.json())
     .then((data) => {
       console.log("Resposta do servidor:", data);
