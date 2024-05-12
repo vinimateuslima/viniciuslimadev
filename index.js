@@ -65,7 +65,7 @@ app.post("/send", async (req, res) => {
         });
     } else {
       // Token reCAPTCHA inválido
-      res.status(200).json({ error: "Erro: Token reCAPTCHA inválido." });
+      res.status(400).json({ error: "Erro: Token reCAPTCHA inválido.", token: recaptchaToken });
     }
   } catch (error) {
     console.error("Erro ao verificar token reCAPTCHA:", error);

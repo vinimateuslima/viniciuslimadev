@@ -56,6 +56,8 @@ form.addEventListener("submit", (e) => {
             setTimeout(() => {
               msgErro.setAttribute("class", "mensagem d-none");
             }, 3000);
+
+			console.log(response.error);
           }
         })
         .catch((error) => {
