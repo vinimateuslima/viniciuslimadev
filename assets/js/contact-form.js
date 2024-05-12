@@ -34,7 +34,7 @@ form.addEventListener("submit", (e) => {
         body: JSON.stringify(formData),
       };
 
-      fetch("http://vinilimadev.com/send", options)
+      fetch("https://vinilimadev.com/send", options)
         .then((response) => response.json())
         .then(async (response) => {
           if (response.success === true) {
