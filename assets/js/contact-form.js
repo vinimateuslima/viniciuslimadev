@@ -15,9 +15,7 @@ form.addEventListener("submit", (e) => {
 
   grecaptcha.ready(function () {
     grecaptcha.execute(KEY, { action: "submit" }).then(function (token) {
-      console.log(token);
-      
-
+   
       const formData = {
         email: email.value,
         assunto: assunto.value,
