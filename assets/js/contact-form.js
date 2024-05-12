@@ -8,9 +8,11 @@ let assunto = document.getElementById("subject");
 let telefone = document.getElementById("phone");
 let mensagem = document.getElementById("comments");
 
-function onSubmit(token) {
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
+const KEY = "6LeKN9kpAAAAADiVFm2hujUe2fgB4toVKR3YD8eL";
+
+function enviarFormulario() {
+  grecaptcha.execute(KEY, { action: "submit" }).then(function (token) {
+    // Insira o token em um campo de formulário oculto
 
     const formData = {
       email: email.value,
@@ -21,6 +23,7 @@ function onSubmit(token) {
 	<strong>Telefone: </strong>${telefone.value}
 	<br/> 
 	<strong>Mensagem: </strong>${mensagem.value} </p>`,
+      recaptcha_token: token,
     };
 
     const options = {

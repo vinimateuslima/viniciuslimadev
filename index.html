@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/mobile.css" />
     <link rel="icon" type="image/png" href="favicon.png" />
-    <script src="https://google.com/recaptcha/api.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LeKN9kpAAAAADiVFm2hujUe2fgB4toVKR3YD8eL"></script>
     <title>Vinicius Lima | Web Designer</title>
   </head>
   <body>
@@ -840,6 +840,7 @@
                         name="name"
                         id="name"
                         autocomplete="off"
+                        maxlength="100"
                         required
                       />
                     </div>
@@ -852,6 +853,7 @@
                         name="emailHelp"
                         placeholder="Email"
                         autocomplete="off"
+                        maxlength="200"
                         required
                       />
                       <small class="form-text text-muted"></small>
@@ -864,6 +866,7 @@
                         placeholder="Telefone"
                         name="phone"
                         id="phone"
+                        maxlength="20"
                         required
                       />
                     </div>
@@ -875,6 +878,7 @@
                         name="subject"
                         placeholder="Assunto"
                         id="subject"
+                        maxlength="100"
                       />
                     </div>
                   </div>
@@ -887,6 +891,7 @@
                         rows="3"
                         name="comments"
                         id="comments"
+                        maxlength="500"
                       ></textarea>
                     </div>
                   </div>
@@ -898,14 +903,8 @@
                 <div id="msgErro" class="mensagem d-none">
                   <span>Erro ao enviar mensagem</span>
                 </div>
-                <button
-                  type="submit"
-                  id="submit"
-                  class="appointment-btn g-recaptcha"
-                  data-sitekey="6LeKN9kpAAAAADiVFm2hujUe2fgB4toVKR3YD8eL"
-                  data-callback="onSubmit"
-                  data-action="submit"
-                >
+
+                <button type="button" id="submit" class="appointment-btn" onclick="enviarFormulario()">
                   Enviar
                 </button>
               </form>
@@ -1407,7 +1406,7 @@
           <div class="modal-body service-model-content">
             <figure class="mb-0">
               <img
-                src="assets/image/portfolio-model-img5.png"
+                src=""
                 alt="portfolio-model-img1"
                 class="img-fluid"
               />
