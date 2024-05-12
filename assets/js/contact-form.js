@@ -16,6 +16,7 @@ form.addEventListener("submit", (e) => {
   grecaptcha.ready(function () {
     grecaptcha.execute(KEY, { action: "submit" }).then(function (token) {
       console.log(token);
+      
 
       const formData = {
         email: email.value,
@@ -35,7 +36,7 @@ form.addEventListener("submit", (e) => {
         body: JSON.stringify(formData),
       };
 
-      fetch("https://vinilimadev.com/send", options)
+      fetch("http://vinilimadev.com/send", options)
         .then((response) => response.json())
         .then(async (response) => {
           if (response.success === true) {
@@ -57,9 +58,7 @@ form.addEventListener("submit", (e) => {
               msgErro.setAttribute("class", "mensagem d-none");
             }, 3000);
 
-			console.log(response.error);
-			console.log("Token:" + response.token);
-			console.log("Secret:" + response.secret_key);
+			console.log("Error: " + response.error)
           }
         })
         .catch((error) => {

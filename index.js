@@ -26,11 +26,10 @@ app.get("/", (req, res) => {
 
 app.post("/send", async (req, res) => {
   const recaptchaToken = req.body.recaptcha_token;
-  console.log(recaptchaToken)
+
   try {
     // Validar o token reCAPTCHA
     const response = await axios.post(
-  
       "https://www.google.com/recaptcha/api/siteverify",
       null,
       {
@@ -57,15 +56,22 @@ app.post("/send", async (req, res) => {
           subject: req.body.assunto,
           html: req.body.html,
         })
-        .then((info) => {
-          res.send(info);
+        .then(() => {
+          res.status(200).json({
+            success: true,
+          });
         })
         .catch((error) => {
-          res.send(error);
+          res.status(400).json({
+            success: false,
+            error: error.message,
+          });
         });
     } else {
       // Token reCAPTCHA inválido
-      res.status(400).json({ error: "Erro: Token reCAPTCHA inválido.", token: recaptchaToken, secret_key: SECRET_KEY });
+      res.status(400).json({
+        error: "Erro: Token reCAPTCHA inválido.",
+      });
     }
   } catch (error) {
     console.error("Erro ao verificar token reCAPTCHA:", error);
