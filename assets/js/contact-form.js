@@ -14,6 +14,8 @@ function enviarFormulario() {
   grecaptcha.execute(KEY, { action: "submit" }).then(function (token) {
     // Insira o token em um campo de formulário oculto
 
+	console.log(token);
+
     const formData = {
       email: email.value,
       assunto: assunto.value,

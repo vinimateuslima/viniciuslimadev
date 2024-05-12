@@ -62,18 +62,15 @@ app.post("/send", async (req, res) => {
         .catch((error) => {
           res.send(error);
         });
-      res.status(200).json({ message: "Formulário enviado com sucesso!" });
     } else {
       // Token reCAPTCHA inválido
       res.status(400).json({ error: "Erro: Token reCAPTCHA inválido." });
     }
   } catch (error) {
     console.error("Erro ao verificar token reCAPTCHA:", error);
-    res
-      .status(500)
-      .json({
-        error: "Erro interno do servidor ao verificar token reCAPTCHA.",
-      });
+    res.status(500).json({
+      error: "Erro interno do servidor ao verificar token reCAPTCHA.",
+    });
   }
 });
 
