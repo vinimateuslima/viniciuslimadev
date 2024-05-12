@@ -37,27 +37,29 @@ form.addEventListener("submit", (e) => {
 
       fetch("https://vinilimadev.com/send", options)
         .then((response) => response.json())
-        .then((data) => {
-          nome.value = "";
-          email.value = "";
-          assunto.value = "";
-          telefone.value = "";
-          mensagem.value = "";
+        .then(async (response) => {
+          if (response.success === true) {
+            nome.value = "";
+            email.value = "";
+            assunto.value = "";
+            telefone.value = "";
+            mensagem.value = "";
 
-          msgSucesso.setAttribute("class", "mensagem");
+            msgSucesso.setAttribute("class", "mensagem");
 
-          setTimeout(() => {
-            msgSucesso.setAttribute("class", "mensagem d-none");
-          }, 3000);
+            setTimeout(() => {
+              msgSucesso.setAttribute("class", "mensagem d-none");
+            }, 3000);
+          } else {
+            msgErro.setAttribute("class", "mensagem");
+
+            setTimeout(() => {
+              msgErro.setAttribute("class", "mensagem d-none");
+            }, 3000);
+          }
         })
         .catch((error) => {
           console.error("Erro ao enviar mensagem:", error);
-
-          msgErro.setAttribute("class", "mensagem");
-
-          setTimeout(() => {
-            msgErro.setAttribute("class", "mensagem d-none");
-          }, 3000);
         });
     });
   });

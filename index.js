@@ -26,10 +26,11 @@ app.get("/", (req, res) => {
 
 app.post("/send", async (req, res) => {
   const recaptchaToken = req.body.recaptcha_token;
-
+  console.log(recaptchaToken)
   try {
     // Validar o token reCAPTCHA
     const response = await axios.post(
+  
       "https://www.google.com/recaptcha/api/siteverify",
       null,
       {
