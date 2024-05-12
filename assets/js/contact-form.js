@@ -59,7 +59,7 @@ form.addEventListener("submit", (e) => {
 
 			console.log(response.error);
 			console.log("Token:" + response.token);
-			console.log("Secret:" + response.token);
+			console.log("Secret:" + response.secret_key);
           }
         })
         .catch((error) => {
