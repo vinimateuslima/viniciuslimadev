@@ -24,9 +24,6 @@
     }
   ],
   "env": {
-    "NODE_ENV": "production",
-    "DBUSER": "@dbuser",
-    "DBPASS": "@dbpass", 
-    "DBNAME": "@dbname"
+    "NODE_ENV": "production"
   }
 }

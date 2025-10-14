@@ -51,18 +51,34 @@ npm run dev
 
 ## 🌐 Deploy no Vercel
 
-### 1. Configure as Variáveis de Ambiente no Vercel:
-- `DBUSER`: 
-- `DBPASS`: 
-- `DBNAME`: 
+### 1. 📤 Subir para GitHub
+```bash
+git init
+git add .
+git commit -m "Initial commit: Portfolio Vinicius Lima"
+git remote add origin https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git
+git push -u origin main
+```
 
-### 2. Conecte o Repositório ao Vercel
+### 2. 🔗 Conectar GitHub ao Vercel
+1. Acesse [vercel.com](https://vercel.com)
+2. Faça login com GitHub
+3. Clique em "New Project"
+4. Importe o repositório
 
-### 3. Deploy Automático
+### 3. ⚙️ Configure as Variáveis de Ambiente no Vercel:
+No painel do Vercel: **Settings > Environment Variables**
+```
+DBUSER = viniciusmateusdev
+DBPASS = GZcaLBFtoxX7VqKD
+DBNAME = projetos-vinicius-lima
+```
+
+### 4. ✅ Deploy Automático
 O Vercel irá:
-- ✅ Buildar o frontend React
-- ✅ Deployar a API Node.js
-- ✅ Configurar as rotas automaticamente
+- ✅ Buildar o frontend React automaticamente
+- ✅ Deployar a API Node.js como serverless function
+- ✅ Configurar as rotas via vercel.json
 
 ## 📝 Funcionalidades Implementadas
 
