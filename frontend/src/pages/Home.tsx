@@ -2,6 +2,15 @@ import { useEffect } from 'react';
 import PortfolioSection from '../components/PortfolioSection';
 import TestimonialsSection from '../components/TestimonialsSection';
 
+// Importar imagens
+import logoImg from '../assets/image/logo-img.png';
+import bannerRightImg from '../assets/image/banner-right-img.png';
+import serviceIcon1 from '../assets/image/service-icon1.png';
+import serviceIcon2 from '../assets/image/service-icon2.png';
+import serviceIcon3 from '../assets/image/service-icon3.png';
+import serviceIcon4 from '../assets/image/service-icon4.png';
+import footerLogo from '../assets/image/footer-logo.png';
+
 const Home: React.FC = () => {
   useEffect(() => {
     // Inicializar WOW.js após o componente ser montado
@@ -20,7 +29,7 @@ const Home: React.FC = () => {
                 <nav className="navbar navbar-expand-lg navbar-light p-0">
                   <a className="navbar-brand p-0" href="https://vinilimadev.com">
                     <img
-                      src="/src/assets/image/logo-img.png"
+                      src={logoImg}
                       alt="logo-img"
                       className="img-fluid"
                     />
@@ -133,7 +142,7 @@ const Home: React.FC = () => {
                     <div className="banner-right-con position-relative wow slideInRight" id="banner-right-con">
                       <figure className="mb-0">
                         <img
-                          src="/src/assets/image/banner-right-img.png"
+                          src={bannerRightImg}
                           alt="banner-right-img"
                           id="banner-right-img"
                         />
@@ -166,7 +175,7 @@ const Home: React.FC = () => {
                   <div className="service-box-item">
                     <figure className="mb-0">
                       <img
-                        src="/src/assets/image/service-icon3.png"
+                        src={serviceIcon3}
                         alt="service-icon"
                         className="img-fluid"
                       />
@@ -188,7 +197,7 @@ const Home: React.FC = () => {
                   <div className="service-box-item">
                     <figure className="mb-0">
                       <img
-                        src="/src/assets/image/service-icon1.png"
+                        src={serviceIcon1}
                         alt="service-icon"
                         className="img-fluid"
                       />
@@ -212,7 +221,7 @@ const Home: React.FC = () => {
                   <div className="service-box-item mb-0 em-breve">
                     <figure className="mb-0">
                       <img
-                        src="/src/assets/image/service-icon4.png"
+                        src={serviceIcon4}
                         alt="service-icon"
                         className="img-fluid"
                       />
@@ -235,7 +244,7 @@ const Home: React.FC = () => {
                   <div className="service-box-item">
                     <figure className="mb-0">
                       <img
-                        src="/src/assets/image/service-icon2.png"
+                        src={serviceIcon2}
                         alt="service-icon"
                         className="img-fluid"
                       />
@@ -833,7 +842,7 @@ const Home: React.FC = () => {
           <div className="weight-footer-content text-center">
             <figure className="">
               <img
-                src="/src/assets/image/footer-logo.png"
+                src={footerLogo}
                 alt="footer-logo"
                 className="img-fluid"
               />

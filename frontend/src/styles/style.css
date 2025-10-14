@@ -163,7 +163,7 @@ body {
   position: absolute;
   top: 25%;
   left: 0;
-  background: url(/src/assets/image/curn-icon.png) no-repeat top left;
+  background: url(/images/curn-icon.png) no-repeat top left;
   -webkit-animation: mover 1s infinite alternate;
   animation: mover 1s infinite alternate;
 }
@@ -174,7 +174,7 @@ body {
   position: absolute;
   bottom: 100px;
   right: -58%;
-  background: url(/src/assets/image/triangle-icon.png) no-repeat top left;
+  background: url(/images/triangle-icon.png) no-repeat top left;
   -webkit-animation: mover 1s infinite alternate;
   animation: mover 2s infinite alternate;
 }
@@ -185,7 +185,7 @@ body {
   position: absolute;
   top: -131px;
   left: 0;
-  background: url(/src/assets/image/half-circle.png) no-repeat top left;
+  background: url(/images/half-circle.png) no-repeat top left;
   -webkit-animation: mover 1s infinite alternate;
   animation: mover 1.5s infinite alternate;
 }
@@ -217,7 +217,7 @@ body {
   position: absolute;
   top: 207px;
   left: 0;
-  background: url(/src/assets/image/circle-bg-left-img.png) no-repeat top left;
+  background: url(/images/circle-bg-left-img.png) no-repeat top left;
   animation: right-mover 1s infinite alternate;
   -webkit-animation: right-mover 1s infinite alternate;
 }
@@ -228,7 +228,7 @@ body {
   position: absolute;
   top: 154px;
   left: 72px;
-  background: url(/src/assets/image/half-circle-left-icon.png) no-repeat top left;
+  background: url(/images/half-circle-left-icon.png) no-repeat top left;
   animation: mover 1s infinite alternate;
   -webkit-animation: mover 1s infinite alternate;
 }
@@ -239,7 +239,7 @@ body {
   position: absolute;
   bottom: 190px;
   right: -116px;
-  background: url(/src/assets/image/corn-left-icon.png) no-repeat top left;
+  background: url(/images/corn-left-icon.png) no-repeat top left;
   animation: mover 1s infinite alternate;
   -webkit-animation: mover 1s infinite alternate;
 }
@@ -343,7 +343,7 @@ body {
   width: 352px;
   height: 344px;
   position: absolute;
-  background: url(/src/assets/image/portfolio-left-img.png) no-repeat top left;
+  background: url(/images/portfolio-left-img.png) no-repeat top left;
 }
 .portfolio-con:after {
   bottom: 0;
@@ -352,7 +352,7 @@ body {
   width: 361px;
   height: 292px;
   position: absolute;
-  background: url(/src/assets/image/portfolio-right-img.png) no-repeat top right;
+  background: url(/images/portfolio-right-img.png) no-repeat top right;
 }
 .filterDiv {
   float: left;
@@ -474,7 +474,7 @@ body {
   position: absolute;
   bottom: 64px;
   right: -116px;
-  background: url(/src/assets/image/corn-left-icon.png) no-repeat top left;
+  background: url(/images/corn-left-icon.png) no-repeat top left;
   animation: mover 1s infinite alternate;
   -webkit-animation: mover 1s infinite alternate;
 }
@@ -499,7 +499,7 @@ body {
   position: absolute;
   top: 207px;
   right: 0;
-  background: url(/src/assets/image/circle-bg-img.png) no-repeat top right;
+  background: url(/images/circle-bg-img.png) no-repeat top right;
   animation: left-mover 1s infinite alternate;
   -webkit-animation: left-mover 1s infinite alternate;
 }
@@ -510,7 +510,7 @@ body {
   position: absolute;
   top: 154px;
   right: 72px;
-  background: url(/src/assets/image/half-circle-right-icon.png) no-repeat top left;
+  background: url(/images/half-circle-right-icon.png) no-repeat top left;
   animation: mover 1s infinite alternate;
   -webkit-animation: mover 1s infinite alternate;
 }
@@ -521,7 +521,7 @@ body {
   position: absolute;
   bottom: 26px;
   left: -116px;
-  background: url(/src/assets/image/triangle-icon.png) no-repeat top left;
+  background: url(/images/triangle-icon.png) no-repeat top left;
   -webkit-animation: mover 1s infinite alternate;
   animation: mover 1s infinite alternate;
 }
@@ -778,7 +778,7 @@ body {
   position: absolute;
   bottom: 26px;
   left: -116px;
-  background: url(/src/assets/image/triangle-icon.png) no-repeat top left;
+  background: url(/images/triangle-icon.png) no-repeat top left;
   animation: mover 1s infinite alternate;
   -webkit-animation: mover 1s infinite alternate;
 }
@@ -792,7 +792,7 @@ body {
   position: absolute;
   top: 207px;
   right: -6px;
-  background: url(/src/assets/image/circle-bg-img.png) no-repeat top right;
+  background: url(/images/circle-bg-img.png) no-repeat top right;
   animation: left-mover 1s infinite alternate;
   -webkit-animation: left-mover 1s infinite alternate;
 }
@@ -803,7 +803,7 @@ body {
   position: absolute;
   top: 154px;
   right: 72px;
-  background: url(/src/assets/image/half-circle-right-icon.png) no-repeat top left;
+  background: url(/images/half-circle-right-icon.png) no-repeat top left;
   animation: mover 1s infinite alternate;
   -webkit-animation: mover 1s infinite alternate;
 }
@@ -914,7 +914,7 @@ body {
   position: absolute;
   bottom: 140px;
   right: -116px;
-  background: url(/src/assets/image/corn-left-icon.png) no-repeat top left;
+  background: url(/images/corn-left-icon.png) no-repeat top left;
   animation: mover 1s infinite alternate;
   -webkit-animation: mover 1s infinite alternate;
 }
@@ -1001,7 +1001,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background: url(/src/assets/image/footer-left-dotted-img.png) no-repeat top left;
+  background: url(/images/footer-left-dotted-img.png) no-repeat top left;
 }
 .weight-footer-con:after {
   content: "";
@@ -1010,7 +1010,7 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  background: url(/src/assets/image/footer-dotted-right-img.png) no-repeat top right;
+  background: url(/images/footer-dotted-right-img.png) no-repeat top right;
 }
 /******footer section*******/
 /**** tastimonials section****/
@@ -1107,7 +1107,7 @@ body {
   position: absolute;
   top: 115px;
   left: 72px;
-  background: url(/src/assets/image/half-circle-left-icon.png) no-repeat top left;
+  background: url(/images/half-circle-left-icon.png) no-repeat top left;
   animation: mover 1s infinite alternate;
   -webkit-animation: mover 1s infinite alternate;
 }
@@ -1118,7 +1118,7 @@ body {
   position: absolute;
   top: 132px;
   left: 0;
-  background: url(/src/assets/image/circle-bg-left-img.png) no-repeat top left;
+  background: url(/images/circle-bg-left-img.png) no-repeat top left;
   animation: right-mover 1s infinite alternate;
   -webkit-animation: right-mover 1s infinite alternate;
 }
