@@ -1,0 +1,129 @@
+# Vinicius Lima - Portfolio Website
+
+Este é o portfólio pessoal do Vinicius Lima, desenvolvido com React e Node.js, totalmente funcional e pronto para deploy no Vercel.
+
+## 🚀 Tecnologias Utilizadas
+
+- **Frontend**: React 18, TypeScript, Vite
+- **Backend**: Node.js, Express, MongoDB
+- **Estilização**: CSS3, Bootstrap
+- **Deploy**: Vercel
+- **Banco de Dados**: MongoDB Atlas
+
+## 📁 Estrutura do Projeto
+
+```
+├── frontend/          # Aplicação React
+│   ├── src/
+│   │   ├── components/    # Componentes reutilizáveis
+│   │   ├── pages/         # Páginas da aplicação
+│   │   ├── hooks/         # Custom hooks
+│   │   ├── services/      # Serviços de API
+│   │   └── styles/        # Arquivos CSS
+│   └── package.json
+├── api/               # Backend Node.js
+│   ├── models/        # Modelos do MongoDB
+│   ├── routes/        # Rotas da API
+│   ├── config/        # Configurações
+│   └── server.js      # Servidor principal
+└── vercel.json        # Configuração do Vercel
+```
+
+## 🛠️ Como Executar Localmente
+
+### Pré-requisitos
+- Node.js 16+ 
+- MongoDB Atlas
+
+### Frontend
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+### Backend
+```bash
+cd api
+npm install
+npm run dev
+```
+
+## 🌐 Deploy no Vercel
+
+### 1. Configure as Variáveis de Ambiente no Vercel:
+- `DBUSER`: 
+- `DBPASS`: 
+- `DBNAME`: 
+
+### 2. Conecte o Repositório ao Vercel
+
+### 3. Deploy Automático
+O Vercel irá:
+- ✅ Buildar o frontend React
+- ✅ Deployar a API Node.js
+- ✅ Configurar as rotas automaticamente
+
+## 📝 Funcionalidades Implementadas
+
+### 🎨 Frontend
+- ✅ Portfólio dinâmico com projetos da API
+- ✅ Gerenciamento completo de projetos (CRUD)
+- ✅ Upload de imagens (base64, limite 50MB)
+- ✅ Filtros por categoria dinâmicos
+- ✅ Modal de visualização de imagens
+- ✅ Design responsivo e moderno
+- ✅ Seção de depoimentos
+- ✅ Preços com design profissional
+- ✅ Botão WhatsApp flutuante
+
+### 🔧 Backend
+- ✅ API REST completa (GET, POST, PUT, DELETE)
+- ✅ Modelo de Projeto com validações
+- ✅ Conexão MongoDB Atlas
+- ✅ Middleware de CORS configurado
+- ✅ Tratamento de erros
+- ✅ Validação de imagens base64
+
+### 🎯 Páginas
+- ✅ **Home**: Site principal com portfólio dinâmico
+- ✅ **Gerenciar Projetos**: Interface administrativa completa
+
+## 🔗 URLs de Produção
+
+- **Site Principal**: https://vinilimadev.com
+- **API**: https://vinilimadev.com/api
+- **Gerenciar Projetos**: https://vinilimadev.com/gerenciarProjetos
+- **Health Check**: https://vinilimadev.com/api/health
+
+## 📊 Status do Projeto
+
+- ✅ **Frontend**: 100% funcional
+- ✅ **Backend**: 100% funcional  
+- ✅ **Database**: Conectado e operacional
+- ✅ **Deploy**: Configurado para Vercel
+- ✅ **Responsivo**: Mobile e desktop
+- ✅ **Performance**: Otimizado
+
+## 🎨 Design Features
+
+- **Cores Principais**: Mantidas do design original
+- **Gradientes Modernos**: Seção de preços
+- **Animações**: Hover effects e transições
+- **Tipografia**: Josefin Sans
+- **Ícones**: Font Awesome + Lucide React
+
+## 📧 Contato
+
+- **Email**: viniciusmateus.dev@gmail.com
+- **WhatsApp**: (81) 9 9974-0336
+- **LinkedIn**: [Vinicius Lima](https://www.linkedin.com/in/vinicius-lima-924807181/)
+- **Instagram**: [@viniciuslimadev](https://www.instagram.com/viniciuslimadev/)
+
+## 🚀 Pronto para Deploy!
+
+O projeto está **100% funcional** e pronto para ser deployado no Vercel. Todas as configurações estão corretas e o banco de dados está conectado.
+
+---
+
+Desenvolvido com ❤️ por Vinicius Lima
