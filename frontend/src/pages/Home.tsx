@@ -1,7 +1,14 @@
+import { useEffect } from 'react';
 import PortfolioSection from '../components/PortfolioSection';
 import TestimonialsSection from '../components/TestimonialsSection';
 
 const Home: React.FC = () => {
+  useEffect(() => {
+    // Inicializar WOW.js após o componente ser montado
+    if (typeof window !== 'undefined' && (window as any).WOW) {
+      new (window as any).WOW().init();
+    }
+  }, []);
   return (
     <div>
       {/* Header and Banner Section */}

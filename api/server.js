@@ -11,7 +11,7 @@ const app = express();
 // Middleware
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
-    ? 'https://vinilimadev.com' 
+    ? ['https://vinilimadev.com', 'https://viniciuslimadev-ten.vercel.app'] 
     : 'http://localhost:5173',
   credentials: true
 }));

@@ -108,6 +108,7 @@ O Vercel irá:
 ## 🔗 URLs de Produção
 
 - **Site Principal**: https://vinilimadev.com
+- **Site Alternativo**: https://viniciuslimadev-ten.vercel.app
 - **API**: https://vinilimadev.com/api
 - **Gerenciar Projetos**: https://vinilimadev.com/gerenciarProjetos
 - **Health Check**: https://vinilimadev.com/api/health
