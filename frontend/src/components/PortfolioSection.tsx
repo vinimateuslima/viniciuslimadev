@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { ExternalLink, Eye } from 'lucide-react';
 import { useProjetos } from '../hooks/useProjetos';
 import { Projeto } from '../services/api';

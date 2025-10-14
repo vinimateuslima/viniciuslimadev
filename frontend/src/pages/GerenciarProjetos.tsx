@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Plus, Edit, Trash2, ArrowLeft, ExternalLink } from 'lucide-react';
 import { useProjetos } from '../hooks/useProjetos';
