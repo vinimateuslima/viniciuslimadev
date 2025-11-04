@@ -339,7 +339,7 @@ const Home: React.FC = () => {
                         fontWeight: '800',
                         textShadow: '0 2px 4px rgba(0, 0, 0, 0.3)'
                       }}>
-                        R$ 500
+                        R$ 600
                       </span>
                       <span style={{
                         color: 'rgba(255, 255, 255, 0.8)',
@@ -489,7 +489,7 @@ const Home: React.FC = () => {
                         fontWeight: '800',
                         textShadow: '0 2px 4px rgba(0, 0, 0, 0.3)'
                       }}>
-                        R$ 800
+                        R$ 1000
                       </span>
                       <span style={{
                         color: 'rgba(255, 255, 255, 0.8)',
@@ -625,7 +625,7 @@ const Home: React.FC = () => {
                         fontWeight: '800',
                         textShadow: '0 2px 4px rgba(0, 0, 0, 0.3)'
                       }}>
-                        R$ 1.500
+                        R$ 1.800
                       </span>
                     </div>
                     <p style={{
