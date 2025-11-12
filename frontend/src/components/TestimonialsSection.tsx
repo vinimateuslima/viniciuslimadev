@@ -14,30 +14,21 @@ const TestimonialsSection: React.FC = () => {
   const testimonials: Testimonial[] = [
     {
       id: 1,
-      name: "Maria Silva",
-      role: "Empresária",
-      company: "Loja Virtual Maria",
-      content: "Excelente trabalho! O Vinicius criou um site incrível para minha loja virtual. O design ficou moderno e profissional, e as vendas aumentaram significativamente.",
+      name: "Marllyson Renan",
+      role: "Cirurgião Dentista",
+      company: "Marllyson",
+      content: "Precisei do serviço de Vinicius e ele foi muito atencioso, tirou minhas duvidas e prestou um excelente serviço!",
       rating: 5,
-      avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face"
+      avatar: "https://lh3.googleusercontent.com/a-/ALV-UjWuA3VGTU6tpXz6tP66laeUIST84UGY_6Fgbku7ZB2YzmiiZPpI=w36-h36-p-rp-mo-br100"
     },
     {
       id: 2,
-      name: "João Santos",
+      name: "Taciana Dantas",
       role: "CEO",
-      company: "TechStart",
-      content: "Profissional muito competente e dedicado. Entregou o projeto no prazo e superou nossas expectativas. Recomendo para qualquer empresa que precise de um site profissional.",
+      company: "Doce Senhorita",
+      content: "Sou proprietária da Doce Senhorita e escolhi o Vini para cuidar de toda parte visual do meu negócio. Desde os criativos, ao site, logo e todos os detalhes. E com muita segurança, eu digo, não existe profissional melhor! Ele sempre está disponível para dúvidas, sugestões e é extremamente pontual com as entregas! Profissional ímpar! Não largo nunca mais kkkk ♥️",
       rating: 5,
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
-    },
-    {
-      id: 3,
-      name: "Ana Costa",
-      role: "Designer",
-      company: "Studio Ana",
-      content: "O Vinicius transformou minha ideia em realidade. O site ficou exatamente como eu imaginava, com um design único e funcionalidades que facilitam muito o trabalho.",
-      rating: 5,
-      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face"
+      avatar: "https://lh3.googleusercontent.com/a-/ALV-UjVGtWmuK68_xHWNkZCa7E-Zk_BX2GOVQrjL8b-m1yR9565OTyA=w36-h36-p-rp-mo-br100"
     }
   ];
 
@@ -58,7 +49,7 @@ const TestimonialsSection: React.FC = () => {
           <h6>Depoimentos</h6>
           <h2 className="mb-0">O que meus clientes dizem</h2>
         </div>
-        
+
         <div className="row mt-5">
           {testimonials.map((testimonial) => (
             <div key={testimonial.id} className="col-lg-4 col-md-6 mb-4">
@@ -72,14 +63,14 @@ const TestimonialsSection: React.FC = () => {
                 flexDirection: 'column',
                 transition: 'transform 0.3s ease, box-shadow 0.3s ease'
               }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'translateY(-5px)';
-                e.currentTarget.style.boxShadow = '0 15px 40px rgba(0, 0, 0, 0.15)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = 'translateY(0)';
-                e.currentTarget.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.1)';
-              }}>
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'translateY(-5px)';
+                  e.currentTarget.style.boxShadow = '0 15px 40px rgba(0, 0, 0, 0.15)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'translateY(0)';
+                  e.currentTarget.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.1)';
+                }}>
                 {/* Rating */}
                 <div className="text-center mb-3">
                   {renderStars(testimonial.rating)}
